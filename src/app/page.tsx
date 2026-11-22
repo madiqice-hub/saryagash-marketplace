@@ -4,7 +4,6 @@ import { createClient } from '@supabase/supabase-js';
 import CatalogSection from '@/components/CatalogSection';
 import { User, Sparkles } from 'lucide-react';
 
-export const instant = false;
 export default async function HomePage() {
   const supabase = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -30,7 +29,7 @@ export default async function HomePage() {
             className="flex items-center gap-2 px-4 py-2 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-sm font-medium transition"
           >
             <User className="w-4 h-4" />
-            <span>Личный кабинет</span>
+            <span>Р›РёС‡РЅС‹Р№ РєР°Р±РёРЅРµС‚</span>
           </Link>
         </div>
       </header>
@@ -38,11 +37,11 @@ export default async function HomePage() {
       <section className="bg-gradient-to-br from-teal-900 via-teal-800 to-emerald-900 text-white pt-14 pb-24">
         <div className="max-w-7xl mx-auto px-4">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-700/60 text-teal-100 text-xs mb-4">
-            <Sparkles className="w-3.5 h-3.5" /> Единый маркетплейс курорта Сарыагаш
+            <Sparkles className="w-3.5 h-3.5" /> Р•РґРёРЅС‹Р№ РјР°СЂРєРµС‚РїР»РµР№СЃ РєСѓСЂРѕСЂС‚Р° РЎР°СЂС‹Р°РіР°С€
           </span>
-          <h1 className="text-3xl md:text-5xl font-extrabold mb-4">Все санатории Сарыагаша в одном месте</h1>
+          <h1 className="text-3xl md:text-5xl font-extrabold mb-4">Р’СЃРµ СЃР°РЅР°С‚РѕСЂРёРё РЎР°СЂС‹Р°РіР°С€Р° РІ РѕРґРЅРѕРј РјРµСЃС‚Рµ</h1>
           <p className="text-teal-100 text-lg max-w-2xl">
-            Сравнивайте цены на номера Эконом, Стандарт и Люкс, врачей и лечебные программы.
+            РЎСЂР°РІРЅРёРІР°Р№С‚Рµ С†РµРЅС‹ РЅР° РЅРѕРјРµСЂР° Р­РєРѕРЅРѕРј, РЎС‚Р°РЅРґР°СЂС‚ Рё Р›СЋРєСЃ, РІСЂР°С‡РµР№ Рё Р»РµС‡РµР±РЅС‹Рµ РїСЂРѕРіСЂР°РјРјС‹.
           </p>
         </div>
       </section>
@@ -50,7 +49,7 @@ export default async function HomePage() {
       {error ? (
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="p-4 rounded-xl bg-red-50 border border-red-200 text-red-700">
-            Ошибка подключения к базе: {error.message}
+            РћС€РёР±РєР° РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє Р±Р°Р·Рµ: {error.message}
           </div>
         </div>
       ) : (
