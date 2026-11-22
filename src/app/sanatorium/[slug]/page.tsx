@@ -1,5 +1,5 @@
 'use client';
-
+export const instant = false;
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import {
